@@ -2,43 +2,162 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Cleo.site</title>
+  <title>Bienvenue sur Cleo.site</title>
   <style>
     body {
       background-color: #f0f8ff;
       font-family: 'Segoe UI', sans-serif;
       text-align: center;
-      padding: 50px;
+      padding: 20px;
     }
-
-    h1 {
-      color: #2c3e50;
-    }
-
-    p {
-      color: #34495e;
-      font-size: 18px;
-    }
-
-    button {
-      background-color: #1abc9c;
+    header {
+      background-color: #2c3e50;
       color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 20px;
+      padding: 20px;
     }
-
-    button:hover {
-      background-color: #16a085;
+    nav a {
+      margin: 0 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    section {
+      margin: 30px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .btn {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenue sur Cleo.site !</h1>
-  <p>Ceci est mon premier site web hébergé gratuitement sur GitHub Pages.</p>
-  <button onclick="alert('Merci de visiter Cleo.site !')">Clique ici</button>
+
+  <header>
+    <h1>Bienvenue sur Cleo.site</h1>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#apk">Télécharger</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Ce site est mon tout premier site web publié avec GitHub Pages.</p>
+    <img src="https://via.placeholder.com/400x200.png?text=Image+de+test" alt="Mon image">
+  </section>
+
+  <section id="apk">
+    <h2>Fichier à télécharger</h2>
+    <p>Tu peux télécharger mon APK ici :</p>
+    <a class="btn" href="https://exemple.com/monfichier.apk" download>Télécharger l'APK</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Ton nom">
+      <input type="email" placeholder="Ton adresse e-mail">
+      <textarea rows="4" placeholder="Ton message..."></textarea>
+      <button class="btn" type="submit" onclick="alert('Message envoyé !'); return false;">Envoyer</button>
+    </form>
+  </section>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenue sur Cleo.site</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    section {
+      margin: 30px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .btn {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenue sur Cleo.site</h1>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#apk">Télécharger</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Ce site est mon tout premier site web publié avec GitHub Pages.</p>
+    <img src="https://via.placeholder.com/400x200.png?text=Image+de+test" alt="Mon image">
+  </section>
+
+  <section id="apk">
+    <h2>Fichier à télécharger</h2>
+    <p>Tu peux télécharger mon APK ici :</p>
+    <a class="btn" href="https://exemple.com/monfichier.apk" download>Télécharger l'APK</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Ton nom">
+      <input type="email" placeholder="Ton adresse e-mail">
+      <textarea rows="4" placeholder="Ton message..."></textarea>
+      <button class="btn" type="submit" onclick="alert('Message envoyé !'); return false;">Envoyer</button>
+    </form>
+  </section>
+
 </body>
 </html>
